@@ -2,109 +2,113 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pedidos</title>
-    <!-- boostrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <style>
-        body {
-            height: 100vh;
-            background: #348F50;
-            /* fallback for old browsers */
-            background: -webkit-linear-gradient(to right, #56B4D3, #348F50);
-            /* Chrome 10-25, Safari 5.1-6 */
-            background: linear-gradient(to right, #56B4D3, #348F50);
-            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pedidos</title>
+  <!-- boostrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
-        }
-    </style>
+
+
+    
+  <style>
+    body {
+      height: 100vh;
+      background: #DC2424;
+      /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #4A569D, #DC2424);
+      /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #4A569D, #DC2424);
+      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+    }
+  </style>
 
 </head>
 
 <body>
-    <!-- menu -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown link
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </nav>
+  <!-- menu -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Panaderia la Merced</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Reporte</a>
+        </li>
 
-    <!-- formularios -->
-    <div class="container">
-        <h2>Pedidos</h2>
-        <form action="" method="POST" class="form-group">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Menú
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">Inicio</a>
+            <a class="dropdown-item" href="#">Reporte</a>
+            
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
-
-            <input class="form-control" type="number" placeholder="Id del Pedido" readonly>
-
-            <label>Nombres Del Cliente</label>
-            <input class="form-control" type="text" placeholder="Nombres" required>
-
-            <label for="">Apellidos Del Cliente</label>
-            <input class="form-control" type="text" placeholder="Apellidos" required>
-
-            <label for="">Fecha de Entrega</label>
-            <input class="form-control" type="date" name="fecha_entrega" id="fecha_entrega" required>
-
-            <label for="">Tipo de Pastel</label>
-            <select class="form-control" id="" aria-placeholder="Tipo Pastel">
-                <option>A</option>
-                <option>B</option>
-                <option>C</option>
-
-            </select>
+  <!-- formularios -->
+  <div class="container">
+    <h2>Pedidos</h2>
+    <form action="" method="POST" class="form-group">
 
 
+      <input class="form-control" type="number" placeholder="Id del Pedido" readonly>
 
-            <label for="">Cantidad de Pastel</label>
-            <select class="form-control" id="" aria-placeholder="">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-            </select>
+      <label>Nombres Del Cliente</label>
+      <input class="form-control" type="text" placeholder="Nombres" required>
 
-            <label for="">Personalizado</label>
-            <textarea class="form-control" name="" id="" cols="30" rows="10" placeholder="pedidos...">
+      <label for="">Apellidos Del Cliente</label>
+      <input class="form-control" type="text" placeholder="Apellidos" required>
+
+      <label for="">Fecha de Entrega</label>
+      <input class="form-control" type="date" name="fecha_entrega" id="fecha_entrega" required>
+
+      <label for="">Tipo de Pastel</label>
+      <select class="form-control" id="" aria-placeholder="Tipo Pastel">
+        <option>A</option>
+        <option>B</option>
+        <option>C</option>
+
+      </select>
+
+
+
+      <label for="">Cantidad de Pastel</label>
+      <select class="form-control" id="" aria-placeholder="">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+
+      <label for="">Personalizado</label>
+      <textarea class="form-control" name="" id="" cols="30" rows="10" placeholder="pedidos...">
 
             </textarea>
 
-            <button class="btn btn-success btn-lg btn-block">
-                Aceptar
-            </button>
+      <button class="btn btn-success btn-lg btn-block">
+        Aceptar
+      </button>
 
 
 
-        </form>
-    </div>
-
+    </form>
+  </div>
 
 </body>
 
