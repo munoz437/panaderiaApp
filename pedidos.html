@@ -25,6 +25,11 @@
 
     }
 
+    /* .form-control{
+      background-color: black;
+      color: white;
+    } */
+
    
   </style>
 
@@ -86,55 +91,55 @@
     <div class="row justify-content-center">
 
 
-      <form action="" method="POST" class="form-group col-md-6">
+      <form action="" method="POST" class="form-group col-md-6 ">
 
         <h2>Pedidos</h2>
-        <input class="form-control" type="number" placeholder="Id del Pedido" readonly>
+        <input class="form-control text-light bg-dark" type="number" placeholder="Id del Pedido" readonly><br>
 
 
         <div class="row">
           <div class="form-group col-md-6">
             <label>Nombres Del Cliente</label>
-            <input class="form-control" type="text" placeholder="Nombres" required>
+            <input class="form-control text-light bg-dark" type="text" placeholder="Nombres" required>
           </div>
 
           <div class="form-group col-md-6">
             <label for="">Apellidos Del Cliente</label>
-            <input class="form-control" type="text" placeholder="Apellidos" required>
+            <input class="form-control text-light bg-dark" type="text" placeholder="Apellidos" required>
           </div>
         </div>
 
 
 
         <label for="">Fecha de Entrega</label>
-        <input class="form-control" type="date" name="fecha_entrega" id="fecha_entrega" required>
+        <input class="form-control text-light bg-dark" type="date" name="fecha_entrega" id="fecha_entrega" required>
 
         <label for="">Tipo de Pastel</label>
-        <select class="form-control" id="" aria-placeholder="Tipo Pastel">
+        <select class="form-control text-light bg-dark" id="" aria-placeholder="Tipo Pastel" required>
+          <option></option>
           <option>A</option>
           <option>B</option>
-          <option>C</option>
 
         </select>
 
 
         <label for="">Cantidad de Pastel</label>
-        <select class="form-control" id="" aria-placeholder="">
+        <select class="form-control text-light bg-dark" id="" aria-placeholder="" required>
+          <option></option>
           <option>1</option>
           <option>2</option>
           <option>3</option>
           <option>4</option>
-          <option>5</option>
         </select>
 
 
         <label for="">Personalizado</label>
-        <textarea class="form-control" name="" id="" cols="30" rows="5" >
+        <textarea class="form-control text-light bg-dark" name="" id="" cols="30" rows="5" required>
 
         </textarea>
 
         <br>
-        <button type="submit" class="btn btn-success btn-block">
+        <button type="submit" class="btn btn-success btn-block ">
         
           <i class='bx bxs-send'></i>
         </button>
