@@ -6,15 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pedidos</title>
   <!-- boostrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
 
 
-    
+
   <style>
     body {
-      height: 100vh;
       background: #DC2424;
       /* fallback for old browsers */
       background: -webkit-linear-gradient(to right, #4A569D, #DC2424);
@@ -24,6 +22,8 @@
 
 
     }
+
+   
   </style>
 
 </head>
@@ -53,7 +53,7 @@
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <a class="dropdown-item" href="#">Inicio</a>
             <a class="dropdown-item" href="#">Reporte</a>
-            
+
           </div>
         </li>
       </ul>
@@ -61,55 +61,75 @@
   </nav>
 
   <!-- formularios -->
-  <div class="container">
-    <h2>Pedidos</h2>
-    <form action="" method="POST" class="form-group">
+  <div class="container-fluid">
+
+    <div class="row justify-content-center">
 
 
-      <input class="form-control" type="number" placeholder="Id del Pedido" readonly>
+      <form action="" method="POST" class="form-group col-md-6">
 
-      <label>Nombres Del Cliente</label>
-      <input class="form-control" type="text" placeholder="Nombres" required>
-
-      <label for="">Apellidos Del Cliente</label>
-      <input class="form-control" type="text" placeholder="Apellidos" required>
-
-      <label for="">Fecha de Entrega</label>
-      <input class="form-control" type="date" name="fecha_entrega" id="fecha_entrega" required>
-
-      <label for="">Tipo de Pastel</label>
-      <select class="form-control" id="" aria-placeholder="Tipo Pastel">
-        <option>A</option>
-        <option>B</option>
-        <option>C</option>
-
-      </select>
+        <h2>Pedidos</h2>
+        <input class="form-control" type="number" placeholder="Id del Pedido" readonly>
 
 
+        <div class="row">
+          <div class="form-group col-md-6">
+            <label>Nombres Del Cliente</label>
+            <input class="form-control" type="text" placeholder="Nombres" required>
+          </div>
 
-      <label for="">Cantidad de Pastel</label>
-      <select class="form-control" id="" aria-placeholder="">
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
-        <option>5</option>
-      </select>
-
-      <label for="">Personalizado</label>
-      <textarea class="form-control" name="" id="" cols="30" rows="10" placeholder="pedidos...">
-
-            </textarea>
-
-      <button class="btn btn-success btn-lg btn-block">
-        Aceptar
-      </button>
+          <div class="form-group col-md-6">
+            <label for="">Apellidos Del Cliente</label>
+            <input class="form-control" type="text" placeholder="Apellidos" required>
+          </div>
+        </div>
 
 
 
-    </form>
+        <label for="">Fecha de Entrega</label>
+        <input class="form-control" type="date" name="fecha_entrega" id="fecha_entrega" required>
+
+        <label for="">Tipo de Pastel</label>
+        <select class="form-control" id="" aria-placeholder="Tipo Pastel">
+          <option>A</option>
+          <option>B</option>
+          <option>C</option>
+
+        </select>
+
+
+        <label for="">Cantidad de Pastel</label>
+        <select class="form-control" id="" aria-placeholder="">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+
+
+        <label for="">Personalizado</label>
+        <textarea class="form-control" name="" id="" cols="30" rows="10" >
+
+        </textarea>
+
+        <br>
+        <button type="submit" class="btn btn-success btn-block">
+          Aceptar
+        </button>
+
+
+
+      </form>
+    </div>
+
+
+
+
   </div>
-
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 
 </html>
